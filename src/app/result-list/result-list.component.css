@@ -1,0 +1,28 @@
+.result-list {
+    background-color: var(--soft-black);
+    border-radius: var(--border-radius-default);
+    padding: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.result-list__header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+
+.results {
+    list-style: none;
+    text-indent: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.result-list__pager {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}

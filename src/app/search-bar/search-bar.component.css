@@ -1,0 +1,43 @@
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin: 1rem 0;
+    justify-content: space-between;
+}
+
+.search-bar__game {
+    flex: 0 0 content;
+    padding-right: 1rem;
+}
+
+.search-bar__input {
+    flex-grow: 4;
+    padding-right: 1rem;
+}
+
+.search-bar__price {
+    flex: 0 0 content;
+}
+
+.input-search {
+    display: flex;
+    align-items: center;    
+    justify-content: start;
+    padding: 1rem 1rem;
+    border-radius: var(--border-radius-default);
+    background-color: rgba(204, 204, 204, 0.08);
+}
+
+@media (min-width: 768px) {
+    .search-bar {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 992px) {
+    .search-bar {
+        flex-direction: row;
+    }
+    
+}

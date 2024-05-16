@@ -1,0 +1,85 @@
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+    'header'
+    'main';
+}
+
+header, footer {
+    padding: var(--header-footer-spacing);
+    background-color: var(--soft-black);
+}
+
+footer {
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr minmax(0, 1400px) 1fr;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    overflow: auto;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr minmax(0, 1400px) 1fr;
+    background-image: url("../assets/wp.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: grayscale(90%); */
+}
+
+main > section {
+    grid-area: 1 / 2 / 1 / 3;
+    padding: 5px 0 0 0;
+    width: 100%;
+    display: flex;
+}
+
+main > section > * {
+    overflow: auto;
+}
+  
+main > section.full {
+    grid-area: 1 / 1 / 1 / 4;
+}
+
+main > footer {
+    /* position: sticky; */
+    bottom: 0;
+    grid-area: 2 / 1 / 2 / 4;
+}
+
+
+table th {
+    text-align: left;
+  }
+table th, table td {
+    padding: 5px;
+  }
+
+input {
+  display: block;
+  height: 31px;
+  width: 100%;
+  border: 1px solid gray;
+  padding: 3px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: lightskyblue;
+  border: 1px solid lightskyblue;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 5px 10px;
+}

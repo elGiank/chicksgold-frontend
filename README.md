@@ -1,27 +1,24 @@
-# ChicksgoldFe
+# Chicksgold Frontend code challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+## How to run the app
 
-## Development server
+- Ensure you have installed the last TLS node version, if no please follow the [directions for installation on nodejs.org](https://nodejs.org/en/download/)
+- Install Angular CLI globaly with `npm install -g @angular/cli` in your local terminal (cmd, bash, zsh)
+- In your local terminal navigate to this repo folder, then run `ng serve` to up a demo local server
+- Navigate to `http://localhost:4200/` to view the application
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technology
+- Used Angular as frontend framework
+- Used BEM as naming convention for the css classes
+- Used css grid to structure the page layout
+- Used flexbox to structure the internal components
+- Used icons from FontAwesome
+- Used SVG images except for background
+- Used google font Roboto
 
-## Code scaffolding
+## Project structure
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The project is based on angular components with no main module. The app is structured based on 6 structural components  + 1 main component that composite the other ones to build the app.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

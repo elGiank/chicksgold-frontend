@@ -1,1 +1,151 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  font-family: sans-serif;
+  margin: 0;
+  color: white;
+  --main-spacing: 15px 5px 10px 5px;
+  --header-footer-spacing: 10px 5px;
+  --soft-black: #303141;
+  --deep-gray: #323648;
+  --green-mint: #38cb92;
+  --border-radius-default: .25rem
+  
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    }
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.button {
+    border: none;
+    border-radius: .3rem;
+    padding: .75rem .75rem;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+    background-color: var(--green-mint);
+}
+
+.button--muted {
+    background-color: rgb(245, 245, 245, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 1.25rem .75rem;
+}
+
+.button--secondary {
+    background-color: #5762d5;
+    color: white;
+}
+
+.button--with-icon {
+    justify-content: space-between;
+}
+
+.button--icon {
+    margin-left: .75rem;
+}
+
+.button--icon-right {
+    margin-left: 1rem;
+}
+
+.button__icon-background {
+    background-color: rgb(10, 9, 9, 0.25);
+    border-radius: var(--border-radius-default);
+    padding: .5rem;
+    margin-left: .5rem;
+}
+
+.fa-icon-left {
+    margin-right: .5rem;
+}
+
+.fa-icon-chevron-down {
+    margin-left: .5rem;
+}
+
+.dropwdown {
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    padding: .75rem 1rem;
+    width: 220px;
+    border-radius: var(--border-radius-default);
+    background-color: rgba(204, 204, 204, 0.08);
+}
+
+.dropwdown__left {
+    display: flex;
+    align-items: center;
+}
+
+.dropwdown--small {
+    width: 120px;
+}
+
+.dropwdown__content {
+    display: flex;
+    align-items: center;
+}
+
+.dropwdown__content-icon-color {
+    color: var(--green-mint);
+}
+
+.dropwdown__content-icon {
+    font-size: 1.5rem;
+    margin-right: .35rem;
+}
+
+.dropwdown--small-border {
+    border-right: 1px solid white;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.dropwdown__content-title {
+    font-size: .75rem;
+}
+
+.dot-green {
+    color: var(--green-mint);
+    font-size: 2rem;
+    line-height: 1rem;
+    margin-right: .25rem;
+}
+
+.label {
+    border: 1px solid white;
+    border-radius: var(--border-radius-default);
+    background-color: transparent;
+    padding: .25rem;
+    text-align: center;
+}
+
+.label--green {
+    border-color: var(--green-mint);
+    color: var(--green-mint); 
+}
